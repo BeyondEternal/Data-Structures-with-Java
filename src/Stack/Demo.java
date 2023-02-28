@@ -15,25 +15,16 @@ public class Demo {
             System.out.println("\n4.IS EMPTY");
             System.out.println("\n5.EXIT");
             System.out.println("\n enter your choice : ");
-            switch(in.nextInt())
-            {
-                case 1:
+            switch (in.nextInt()) {
+                case 1 -> {
                     System.out.println("\nenter the value ");
                     s.push(in.nextInt());
-                    break;
-                case 2:
-                    System.out.println("\n popped element : "+ s.pop());
-                    break;
-
-                case 3:
-                    System.out.println("\n top element : "+ s.peek());
-                    break;
-                case 4: System.out.println("\n is empty : "+ s.isEmpty());
-                    break;
-                case 5: System.exit(0);
-                    break;
-                default: System.out.println("\n Wrong Choice!");
-                    break;
+                }
+                case 2 -> System.out.println("\n popped element : " + s.pop());
+                case 3 -> System.out.println("\n top element : " + s.peek());
+                case 4 -> System.out.println("\n is empty : " + s.isEmpty());
+                case 5 -> System.exit(0);
+                default -> System.out.println("\n Wrong Choice!");
             }
             System.out.println("\n do you want to continue? 1 = yes / 2 = no ");
         }while(in.nextInt()==1);

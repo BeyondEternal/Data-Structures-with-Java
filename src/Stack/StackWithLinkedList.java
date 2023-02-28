@@ -55,16 +55,13 @@ public class StackWithLinkedList {
 
     boolean isEmpty(LinkedList head)
     {
-        if(head==null)
-            return true;
-        else
-            return false;
+        if(head==null) return true;
+        else return false;
     }
 
     int peek(LinkedList head)
     {
-        if(head==null)
-            return -1;
+        if(head==null) return -1;
         return head.data;
     }
 

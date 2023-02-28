@@ -2,7 +2,7 @@ package Queue;
 import java.util.*;
 
 public class Queue {
-    private int[] dataStore;
+    private final int[] dataStore;
     private int front, back;
 
     Queue(){

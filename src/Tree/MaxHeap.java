@@ -40,7 +40,7 @@ public class MaxHeap {
             index = (index-1)/2;
         }
     }
-    void print_heap(int a[]) {
+    void print_heap(int[] a) {
         for(int i=0;i<heapSize;i++)
             System.out.println(a[i]+" ");
     }

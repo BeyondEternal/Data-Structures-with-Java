@@ -11,7 +11,7 @@ public class MyHashSet {
             char c=s.charAt(i);
             if(c==' ')
                 continue;
-            if(set.add(c)==false)
+            if(!set.add(c))
                 return false;
 
         }
